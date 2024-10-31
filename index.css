@@ -248,3 +248,123 @@ body {
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .main_header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .logo_image {
+        max-width: 120px; /* Slightly smaller for smaller screens */
+    }
+
+    .nav_menu ul {
+        flex-direction: column;
+    }
+
+    .nav_menu ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .container {
+        width: 90%;
+    }
+
+    /* Header adjustments */
+    .main_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    .header_pictures {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_menu ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    /* Subcontainer adjustments */
+    .subcontainer_1 {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .subcontainer_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .subcontainer_3 {
+        padding: 10px;
+    }
+
+    /* Box adjustments */
+    .box {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .box img {
+        max-width: 80%;
+    }
+
+    .quote-container {
+        padding: 20px;
+    }
+
+    /* Title and Subtext adjustments */
+    #title p {
+        font-size: 24px;
+    }
+
+    #subtext p {
+        font-size: 14px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #footer_logo_div {
+        margin-top: 15px;
+    }
+
+    .footer_logo {
+        width: 60%;
+    }
+
+    /* Quote adjustments */
+    .quote-text {
+        font-size: 18px;
+    }
+
+    .author-text {
+        font-size: 16px;
+    }
+}
+
+img, iframe {
+    max-width: 100%;
+    height: auto;
+}
