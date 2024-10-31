@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to top, #EDC9C9, #FFFFFF);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -15,6 +17,7 @@ body {
     height: 100vh;
     margin: 0 auto; /* Center the container horizontally */
     padding-top: 20px; /* Add space from the top if needed */
+    flex: 1;
 }
 
 
@@ -30,6 +33,12 @@ body {
     max-width: 150px;
     margin-left: 7px;
     margin-right: 7px;
+    transition: transform 0.4s ease;
+    cursor: pointer;  
+}
+
+.logo_image:hover {
+    transform: scale(0.9); /* Scales the image down to 90% of its size */
 }
 
 .header_pictures {
@@ -127,6 +136,21 @@ body {
     flex-direction: column;
 }
 
+.footer {
+    color: black;
+    padding: 20px;
+    font-size: 0.9em;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    background-color: #212130;
+}
+.footer p {
+    margin: 5px 0;
+    color: white;
+}
+
 #title {
     margin-bottom: 30px;
 }
@@ -140,6 +164,17 @@ body {
 #subtext p {
     font-size: 16px;
     display: inline;
+}
+
+#footer_logo_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logo {
+    width: 30%;
+    height: auto;
 }
 
 .quote-container {
@@ -184,6 +219,7 @@ body {
     font-weight: normal;
     margin-top: 5px;
 }
+
 
 @media (max-width: 599px) {
     .container {
