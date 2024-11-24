@@ -64,6 +64,13 @@ body {
     margin-right: 7px;
 }
 
+.hamburger {
+    display: none; /* Hide on larger screens */
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001; /* Above the dropdown */
+}
 
 .nav_menu ul li a {
     text-decoration: none;
@@ -362,9 +369,8 @@ body {
     .author-text {
         font-size: 16px;
     }
-}
-
-img, iframe {
-    max-width: 100%;
-    height: auto;
+    img, iframe {
+        max-width: 100%;
+        height: auto;
+    }
 }
