@@ -64,6 +64,7 @@ body {
     margin-right: 7px;
 }
 
+
 .hamburger {
     display: none; /* Hide on larger screens */
     font-size: 24px;
@@ -265,11 +266,6 @@ body {
 }
 
 
-@media (max-width: 599px) {
-    .container {
-        width: 100%;
-    }
-}
 
 @media (max-width: 768px) {
     .main_header {
@@ -313,6 +309,11 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        visibility: hidden;
+    }
+
+    .hamburger {
+        display: block;
     }
 
     .nav_menu ul li {

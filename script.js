@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   
     window.addEventListener('scroll', onScroll);
-    onScroll(); // Trigger the check on load
-    
+    onScroll(); // Trigger the check on load    
   });
+  
   
