@@ -262,27 +262,7 @@ body {
 
 
 
-@media (max-width: 768px) {
-    .main_header {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
-    }
-
-    .logo_image {
-        max-width: 120px; /* Slightly smaller for smaller screens */
-    }
-
-    .nav_menu ul {
-        flex-direction: column;
-    }
-
-    .nav_menu ul li {
-        margin: 5px 0;
-    }
-}
-
-@media (max-width: 599px) {
+@media (max-width: 1200px) {
     .container {
         width: 90%;
     }
