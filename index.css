@@ -107,6 +107,13 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.subcontainer_2.visible {
+    animation: fadeIn 0.5s ease-out forwards;
 }
 
 .box {
@@ -120,6 +127,13 @@ body {
     padding: 20px;
     text-align: center;
     position: relative; /* Adjust height as needed */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.box.visible {
+    animation: fadeIn 0.5s ease-out forwards;
 }
 
 .subcontainer_2 .box img {
@@ -214,6 +228,7 @@ body {
     text-align: center;
     color: #000;
 }
+
 
 .quote-mark {
     font-size: 60px;
@@ -374,3 +389,15 @@ body {
         height: auto;
     }
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
