@@ -173,7 +173,6 @@ body {
 }
 
 .temp {
-    display: flex;
     justify-content: center;
     color: black;
     margin-bottom: 30px;
