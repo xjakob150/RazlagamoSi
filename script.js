@@ -21,3 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', onScroll);
     onScroll(); // Trigger the check on load    
   });
+
+document.getElementById("hamburgerBtn").addEventListener("click", function () {
+    document.getElementById("mobileMenu").classList.toggle("show");
+});
